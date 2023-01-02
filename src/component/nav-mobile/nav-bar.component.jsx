@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const NavMenuMobile = ({toggleNav, navMobile})  => {
+const NavBarMobile = ({toggleNav, navMobile})  => {
     return(
         <div className={` absolute z-50 top-0 w-4/6 h-screen bg-[#80808066] backdrop-blur-xl shadow-2xl transition duration-700 ease-in-out ${navMobile}`}>
             <div className="container px-8">
@@ -19,4 +19,4 @@ const NavMenuMobile = ({toggleNav, navMobile})  => {
     )
 }
 
-export default NavMenuMobile;
+export default NavBarMobile;

@@ -1,7 +1,8 @@
 import { Fragment, useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
-import NavMenuMobile from "../../component/nav-mobile/nav-menu.component";
-import NavBarMobile from "../../component/nav-mobile/nav-barMobile.componet";
+import NavBarMobile from "../../component/nav-mobile/nav-bar.component";
+import NavMenu from "../../component/nav-mobile/nav-menu.componet";
+
 
 
 
@@ -17,9 +18,9 @@ const Navigation = () => {
 
     return(
         <Fragment>
-            <nav className="pt-6">
-               <NavBarMobile toggleNav={toggleNavBurguer}/>
-               <NavMenuMobile toggleNav={toggleNavBurguer} navMobile={navMobile}/>
+            <nav className="mt-6">
+               <NavMenu toggleNav={toggleNavBurguer}/>
+               <NavBarMobile toggleNav={toggleNavBurguer} navMobile={navMobile}/>
             </nav>
             <Outlet />
         </Fragment>

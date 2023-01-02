@@ -9,7 +9,7 @@ import Technology from './routes/technology/technology.component';
 function App() {
 
   return (
-    <div className=' px-7 font-roboto text-white'>
+    <div className=' px-7 font-roboto text-white lg:px-16'>
       <Routes>
         <Route path='/' element={<Navigation/>}>
           <Route index element={<Home/>} />
